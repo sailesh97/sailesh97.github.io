@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Add Listing</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style-list.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-white  py-3">
+        <div class="container d-flex justify-content-between">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="px-3">
+                <a href="addListing.html" class="navbar-brand logo-text text-dark" id="brand-text">
+                    <span>
+                        <img src="images-fbp/logo.png" alt="" style="margin-top:-10px;">
+                    </span>
+                    <span class="logo-design">List</span>any</a>
+            </div>
+            <div class="px-3">
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <ul class="navbar-nav nav-text">
+                        <li class="nav-item px-2">
+                            <a href="blog.html" class="nav-link nav-text-design">
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a href="14Page-User.html" class="nav-link nav-text-design">Listing</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a href="blogSingle.html" class="nav-link nav-text-design">Blog</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a href="PageAboutUs.html" class="nav-link nav-text-design">Page</a>
+                        </li>
+
+                        <li class="nav-item px-2">
+                            <a href="15UserEditProfile.html" class="nav-link nav-text-design">
+                                <i class="fas fa-user-plus fa-register"></i>Profile</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a href="ContactUs.html" class="nav-link nav-text-design">
+                                <i class="fas fa-user fa-sign"></i> Contact Us</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <button class="btn nav-btn-design">
+                                <a href="addListing.html" class="addListing-hover"><span class="nav-link">Add Listing</span></a>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="bar-showcase">
+        <div>
+            <div class="container">
+                <div class="bar-text">
+                    <h2 class="mb-2 display-5 blog-margin">Add Listing</h2>
+                    <h6 class="display-6 blog-small">Home-Page-Add Listing</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-red py-3 need-log-in">
+        <div class="container">
+            <div class="float-left mt-2">
+                <h6 class="text-white font-weight-normal ned-log-in-text">You need to Login before performing this
+                    operation</h6>
+            </div>
+            <div class="float-right ">
+                <a href="" class="btn login-btn">LOG IN</a>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <div class="mt-5">
+        <div class="basic-listing-form">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2">
+                        <h6 class="basic-listing-left-text">Basic Listing</h6>
+                    </div>
+                    <div class="col-lg-10">
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1" class="label-font">Listing Title
+                                    <span style="color:rgba(231,40,11);">*</span>
+                                </label>
+                                <input type="email" class="form-control input-shadow" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlTextarea1" class="label-font">Description
+                                    <span style="color:rgba(231,40,11);">*</span>
+                                </label>
+                                <div class="form-group">
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect1" class="label-font">Categories
+                                    <span style="color:rgba(231,40,11);">*</span>
+                                </label>
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                    <option></option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="checkBox" class="label-font">More Filters
+                                    <span style="color:rgba(231,40,11);">*</span>
+                                </label>
+
+                                <div class="row mt-3">
+                                    <div class="col-lg-3">
+                                        <label class="container-1">
+                                            <span class="text2">Wi-fi</span>
+                                            <input type="checkbox" class="myCheck" onclick="myFunction2()">
+                                            <span class="checkmark" onclick="myFunction2()"></span>
+                                        </label>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <label class="container-1">Online Reservation
+                                            <input type="checkbox" class="myCheck" onclick="myFunction()">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <label class="container-1">Events
+                                            <input type="checkbox" class="myCheck" onclick="myFunction()">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <label class="container-1">Wi-fi
+                                            <input type="checkbox" class="myCheck" onclick="myFunction()">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="row mt-3">
+                                    <div class="col-lg-3">
+                                        <label class="container-1">Smoking allowed
+                                            <input type="checkbox" id="myCheck" onclick="myFunction()">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <label class="container-1">Parking street
+                                            <input type="checkbox" id="myCheck" onclick="myFunction()">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <label class="container-1">Elevator in building
+                                            <input type="checkbox" id="myCheck" onclick="myFunction()">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="form-group">
+                                <label class="label-font">Gallery
+                                </label>
+                                <div class="row">
+                                    <div class="d-flex justify-content-between ml-3 gallery-sm">
+                                        <!--<div class=" gallery-tea mr-2">
+
+                                        </div>
+                                        <div class="gallery-whisky mr-2">
+
+                                        </div>-->
+                                        <div class="col-lg-3 drag-drop mr-2 upload-button" style="min-height:150px;min-width:215px;">
+                                            <div class="d-flex justify-content-center">
+                                                <div class="align-items-center">
+                                                    <div class="align-self-center mt-5">
+                                                        <div class="text-center">
+                                                            <i class="fas fa-plus-circle"></i>
+                                                        </div>
+                                                        <div class="text-center">
+                                                            <h6>Drag & Drop File Here</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <input class="file-upload" type="file" accept="image/*" />
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="row mt-5">
+                    <div class="col-lg-2">
+                        <h6 class="basic-listing-left-text">Information</h6>
+                    </div>
+                    <div class="col-lg-10">
+                        <form class="newForm">
+
+                            <div class="form-group">
+                                <label class="label-font">Contact
+                                </label>
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <input class="form-control py-2" type="text" placeholder="Phone">
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <input class="form-control py-2" type="text" placeholder="E-mail">
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <input class="form-control py-2" type="text" placeholder="Website">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="d-flex justify-content-start col-lg-1">
+                                        <div>
+                                            <div class="mr-2">
+                                                <i class="fab fa-twitter-square"></i>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <h6 class="twt mt-1 pt-1">Twitter</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-11 d-flex justify-content-between">
+                                        <div class="col-lg-11">
+                                            <input type="text" class="form-control twitter-input py-1" placeholder="https://twitter.com/">
+                                        </div>
+                                        <div class="py-1 abcd">
+                                            <i class="fas fa-minus-circle twt-rm-1"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="border-so mt-2"></div>
+                            </div>
+
+
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="d-flex justify-content-start col-lg-1">
+                                        <div>
+                                            <div class="mr-2">
+                                                <i class="fab fa-facebook-square"></i>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <h6 class="fb mt-1 pt-1">Facebook</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-11 d-flex justify-content-between">
+                                        <div class="col-lg-11">
+                                            <input type="text" class="form-control twitter-input py-1" placeholder="https://facebook.com/">
+                                        </div>
+                                        <div class="py-1">
+                                            <i class="fas fa-minus-circle twt-rm-2"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="border-so mt-2"></div>
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <div class="row">
+
+                                    <div class="d-flex justify-content-start col-lg-1">
+
+                                        <div>
+                                            <div class="mr-2">
+                                                <i class="fab fa-youtube-square"></i>
+                                            </div>
+                                        </div>
+
+                                        <div>
+                                            <div>
+                                                <h6 class="yt mt-1 pt-1">Youtube</h6>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-lg-11 d-flex justify-content-between">
+
+                                        <div class="col-lg-11">
+                                            <input type="text" class="form-control twitter-input py-1" placeholder="https://youtube.com/">
+                                        </div>
+
+                                        <div class="py-1">
+                                            <i class="fas fa-minus-circle twt-rm-3"></i>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="border-so mt-2"></div>
+
+                            </div>
+
+
+
+
+                            <div class="form-group">
+                                <div class="d-flex justify-content-between">
+                                    <div>
+                                        <h6 class="new-sec">Add new section</h6>
+                                    </div>
+                                    <div class="py-1">
+                                        <i class="fas fa-plus-circle plus-newSection"></i>
+                                    </div>
+                                </div>
+                                <div class="border-so mt-2"></div>
+                            </div>
+
+
+
+                        </form>
+
+                        <form>
+                            <div class="time-form-inner">
+                                <div class="form-group time-section">
+                                    <label class="label-font mb-3">Open Hours
+                                        <span style="color:rgba(231,40,11);">*</span>
+                                    </label>
+
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <div class="px-3">
+                                                <div class="row open-hours-4 border-so pb-3">
+                                                    <input type="text" class="twitter-input col-lg-2 col-md-2 other"
+                                                        placeholder="Mon">
+                                                    <span class="mx-2 col-lg-1 col-md-1 hiphen">-</span>
+                                                    <input type="text" class="twitter-input col-lg-2 col-md-2 other"
+                                                        placeholder="Sat">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-8 d-flex justify-content-between border-so ">
+                                            <div class="col-lg-other-smdv">
+                                                <div class="row border-so-smdv">
+                                                    <div class="col-lg-5 col-md-5 col-lg-other col-lg-other-smdv2">
+                                                        <input id="input-time" class="open-hours-5" type="time" value="--">
+                                                        <span class="badge badge-light am">am</span>
+                                                    </div>
+                                                    <div class="col-lg-1 col-md-1">
+                                                        <span class="to pr-2">to</span>
+                                                    </div>
+                                                    <div class="col-lg-5 col-md-5 col-lg-other col-lg-other-smdv">
+                                                        <input id="input-time" class="open-hours-5" type="time" value="--">
+                                                        <span class="badge badge-light am">pm</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="py-1 time-minus">
+                                                <i class="fas fa-minus-circle minus-smdv"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row mt-3 margin-row-smdv">
+                                        <div class="col-4">
+                                            <div class="px-3">
+                                                <div class="row open-hours-4 border-so pb-3">
+                                                    <input type="text" class="twitter-input col-lg-2 col-md-2 other"
+                                                        placeholder="Mon">
+                                                    <span class="mx-2 col-lg-1 col-md-1 hiphen">-</span>
+                                                    <input type="text" class="twitter-input col-lg-2 col-md-2 other"
+                                                        placeholder="Sat">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-8 d-flex justify-content-between border-so ">
+                                            <div class="col-lg-other-smdv">
+                                                <div class="row border-so-smdv">
+                                                    <div class="col-lg-5 col-md-5 col-lg-other col-lg-other-smdv2">
+                                                        <input id="input-time" class="open-hours-5" type="time" value="--">
+                                                        <span class="badge badge-light am">am</span>
+                                                    </div>
+                                                    <div class="col-lg-1 col-md-1">
+                                                        <span class="to pr-2">to</span>
+                                                    </div>
+                                                    <div class="col-lg-5 col-md-5 col-lg-other col-lg-other-smdv">
+                                                        <input id="input-time" class="open-hours-5" type="time" value="--">
+                                                        <span class="badge badge-light am">pm</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="py-1 time-minus">
+                                                <i class="fas fa-minus-circle minus-smdv"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                                <div class="row mt-4">
+                                    <div class="col-4 ">
+                                        <h6 class="open-hours-4 border-so pb-3 pl-3 day-smdv">Day</h6>
+                                    </div>
+                                    <div class="col-8 d-flex justify-content-between border-so">
+                                        <div class="border-so-smdv2">
+                                            <div class="row border-so-smdv2">
+                                                <div class="col-lg-5 col-md-5 col-lg-other">
+                                                    <input id="input-time" class="open-hours-5" type="time" value="--"
+                                                        disabled>
+                                                    <span class="badge badge-light am">am</span>
+                                                </div>
+                                                <div class="col-lg-1 col-md-1">
+                                                    <span class="to pr-2">to</span>
+                                                </div>
+                                                <div class="col-lg-5 col-md-5 col-lg-other col-lg-other-smdv">
+                                                    <input id="input-time" class="open-hours-5" type="time" value="--"
+                                                        disabled>
+                                                    <span class="badge badge-light am">pm</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="py-1 ">
+                                            <i class="fas fa-plus-circle time-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+
+                <!--Try-->
+
+
+
+
+
+
+                <!--Try End-->
+
+
+
+
+                <div class="row mt-5">
+                    <div class="col-lg-2">
+                        <h6 class="basic-listing-left-text">Pricing</h6>
+                    </div>
+                    <div class="col-lg-10">
+
+                        <div class="panel-group" id="accordion">
+                            <div class="panel panel-default ">
+                                <div class="panel-heading accor-heading-bg px-3 py-1 accor-border">
+                                    <h4 class="panel-title ">
+                                        <a class="accordion-toggle accor-link" data-toggle="collapse" data-parent="#accordion"
+                                            href="#panel1">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="accor-title align-self-center">Section 1</div>
+                                                <div class="">
+                                                    <i class="fas pm fa-minus-circle pb-2"></i>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </h4>
+                                </div>
+
+
+
+                                <div id="panel1" class="panel-collapse collapse in">
+                                    <div class="panel-body">
+                                        <div class="p-body-inner p-remove">
+                                            <div class="row mt-4 stu">
+                                                <div class="col-lg-4 col-md-4 col-sm-6">
+                                                    <input class="form-control py-2" type="text" placeholder="Title*">
+                                                </div>
+                                                <div class="col-lg-5 col-md-5 col-sm-6">
+                                                    <input class="form-control py-2" type="text" placeholder="Description*">
+                                                </div>
+                                                <div class="col-lg-2 col-md-2 col-sm-12">
+                                                    <div class="d-flex justify-content-between input-bd-usd">
+                                                        <div>
+                                                            <input class="form-control py-2" style="border:none;" type="text"
+                                                                placeholder="Price*">
+                                                        </div>
+                                                        <div class="input-group-prepend ">
+                                                            <span class="input-group-text usd-bd" id="validationTooltipUsernamePrepend">USD</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-1 col-md-1 col-sm-1 parent-remove">
+                                                    <i class="fas fa-minus mt-3 fa-xs acc-content-minus"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row mt-4 mb-4">
+                                            <div class="col-lg-4 col-md-4 col-sm-6">
+                                                <input class="form-control py-2" type="text" placeholder="Title*"
+                                                    disabled>
+                                            </div>
+                                            <div class="col-lg-5 col-md-5 col-sm-6">
+                                                <input class="form-control py-2" type="text" placeholder="Description*"
+                                                    disabled>
+                                            </div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12">
+                                                <div class="d-flex justify-content-between input-bd-usd">
+                                                    <div>
+                                                        <input class="form-control py-2" style="border:none;" type="text"
+                                                            placeholder="Price*" disabled>
+                                                    </div>
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text usd-bd" id="validationTooltipUsernamePrepend">USD</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-1 col-md-1 col-xs-1 parent-add">
+                                                <i class="fas fa-plus mt-3 fa-xs acc-content-plus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <!--------------------------------------------         Section 2          ---------------------------------------------------------->
+
+
+
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading accor-heading-bg px-3 py-1 accor-border">
+                                    <h4 class="panel-title ">
+                                        <a class="accordion-toggle accor-link" data-toggle="collapse" data-parent="#accordion"
+                                            href="#panel2">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="accor-title align-self-center">Section 2</div>
+                                                <div class="">
+                                                    <i class="fas pm fa-minus-circle pb-2"></i>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="panel2" class="panel-collapse collapse in">
+                                    <div class="panel-body">
+                                        <div class="p-body-inner-2 p-remove">
+                                            <div class="row mt-4 stu-2">
+                                                <div class="col-lg-4 col-md-4 col-sm-6">
+                                                    <input class="form-control py-2" type="text" placeholder="Title*">
+                                                </div>
+                                                <div class="col-lg-5 col-md-5 col-sm-6">
+                                                    <input class="form-control py-2" type="text" placeholder="Description*">
+                                                </div>
+                                                <div class="col-lg-2 col-md-2 col-sm-12">
+                                                    <div class="d-flex justify-content-between input-bd-usd">
+                                                        <div>
+                                                            <input class="form-control py-2" style="border:none;" type="text"
+                                                                placeholder="Price*">
+                                                        </div>
+                                                        <div class="input-group-prepend ">
+                                                            <span class="input-group-text usd-bd" id="validationTooltipUsernamePrepend">USD</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-1 col-md-1 col-xs-1 parent-remove-2">
+                                                    <i class="fas fa-minus mt-3 fa-xs acc-content-minus-2"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-4 mb-4">
+                                            <div class="col-lg-4  col-md-4 col-sm-6">
+                                                <input class="form-control py-2" type="text" placeholder="Title*"
+                                                    disabled>
+                                            </div>
+                                            <div class="col-lg-5  col-md-5 col-sm-6">
+                                                <input class="form-control py-2" type="text" placeholder="Description*"
+                                                    disabled>
+                                            </div>
+                                            <div class="col-lg-2 col-md-2 col-sm-12">
+                                                <div class="d-flex justify-content-between input-bd-usd">
+                                                    <div>
+                                                        <input class="form-control py-2" style="border:none;" type="text"
+                                                            placeholder="Price*" disabled>
+                                                    </div>
+                                                    <div class="input-group-prepend ">
+                                                        <span class="input-group-text usd-bd" id="validationTooltipUsernamePrepend">USD</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-1 col-md-1 col-xs-1 parent-add-2">
+                                                <i class="fas fa-plus mt-3 fa-xs acc-content-plus-2"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn btn-addlist">Add Listing</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="last-section">
+        <div class="last-section-inner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="d-flex">
+                            <div class="align-items-center">
+                                <div>
+                                    <h6 class="text-white mb-3">About Us</h6>
+                                </div>
+                                <div class="last-section-heading-border">
+                                </div>
+                                <div>
+                                    <p class="about-us-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Voluptate reprehenderit atque
+                                        velit deleniti rem miquam ipsum iure tempora</p>
+                                </div>
+                                <div>
+                                    <i class="fas fa-map-marker-alt d-inline pr-1"></i>
+                                    <p class="about-us-text d-inline"> PO Box 16122 Collins Street West Victoria 8007
+                                        Australuia</p>
+
+                                </div>
+                                <div>
+                                    <i class="fas fa-phone d-inline pr-1"></i>
+                                    <p class="about-us-text d-inline">+61 3 8376 6284</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="row">
+                            <div class="col-sm-6 privacy-sm-1">
+                                <div class="d-flex">
+                                    <div class="align-items-center">
+                                        <div>
+                                            <h6 class="text-white mb-3 mt-small-screen">Privacy Policy</h6>
+                                        </div>
+                                        <div class="last-section-heading-border">
+                                        </div>
+                                        <div class="margin-pp-2">
+                                            <a href="#" class="privact-policy-links">About Us</a>
+                                        </div>
+                                        <div class="mt-1">
+                                            <a href="#" class="privact-policy-links">Advertise</a>
+                                        </div>
+                                        <div class="mt-1">
+                                            <a href="#" class="privact-policy-links">Terms & Rules</a>
+                                        </div>
+                                        <div class="mt-1">
+                                            <a href="#" class="privact-policy-links">Privacy Policy</a>
+                                        </div>
+                                        <div class="mt-1">
+                                            <a href="#" class="privact-policy-links">FAQs</a>
+                                        </div>
+                                        <div class="mt-1">
+                                            <a href="#" class="privact-policy-links">Events</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6  privacy-sm-2">
+                                <div class="d-flex">
+                                    <div class="align-items-center">
+                                        <div style="visibility:hidden;">
+                                            <h6 class="text-white mb-3">Privacy Policy</h6>
+                                        </div>
+                                        <div class="last-section-heading-border" style="visibility:hidden;">
+                                        </div>
+                                        <div class="margin-pp-2">
+                                            <a href="#" class="privact-policy-links">Payment Method</a>
+                                        </div>
+                                        <div class="mt-1">
+                                            <a href="#" class="privact-policy-links">Maintenance</a>
+                                        </div>
+                                        <div class="mt-1">
+                                            <a href="#" class="privact-policy-links">Corporate Client</a>
+                                        </div>
+                                        <div class="mt-1">
+                                            <a href="#" class="privact-policy-links">Learn Press</a>
+                                        </div>
+                                        <div class="mt-1">
+                                            <a href="#" class="privact-policy-links">Release Status</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-lg-3 col-md-6">
+                        <div>
+                            <h6 class="text-white mb-3 mt-small-screen">Popular Listing</h6>
+                        </div>
+                        <div class="last-section-heading-border">
+                        </div>
+                        <div class="d-flex">
+                            <div class="align-items-center">
+                                <div class="margin-pp">
+                                    <div class="row ml-1 mb-2">
+                                        <div class="col-xs-3">
+                                            <img src="images-pgUser/newsletter/nl-11.png" class="img-responsive " alt="">
+                                        </div>
+                                        <div class="col-xs-8">
+                                            <div class="ml-3">
+                                                <p class="popular-listing-text">Lincholn Square Steak</p>
+                                            </div>
+                                            <div class="row d-flex justify-content-between ml-3 star-review">
+                                                <div class="align-items-center ac">
+                                                    <span>
+                                                        <i class="fa fa-star"></i>
+                                                    </span>
+                                                    <span>
+                                                        <i class="fa fa-star"></i>
+                                                    </span>
+                                                    <span>
+                                                        <i class="fa fa-star"></i>
+                                                    </span>
+                                                    <span>
+                                                        <i class="fa fa-star"></i>
+                                                    </span>
+                                                    <span>
+                                                        <i class="fa fa-star"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="align-items-center">
+                                                    <p class="popular-listing-text-2 ac">12 Reviews</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="nl-bg-1">
+
+                                    </div>
+                                </div>
+                                <div class="margin-pp">
+                                    <div class="row ml-1 mb-2">
+                                        <div class="col-xs-3">
+                                            <img src="images-pgUser/newsletter/nl-2.png" class="img-responsive " alt="">
+                                        </div>
+                                        <div class="col-xs-8">
+                                            <div class="ml-3 ac-2">
+                                                <p class="popular-listing-text">Top 10 French Cofee</p>
+                                            </div>
+                                            <div class="row d-flex justify-content-between ml-3 star-review">
+                                                <div class="align-items-center ac ">
+                                                    <span>
+                                                        <i class="fa fa-star"></i>
+                                                    </span>
+                                                    <span>
+                                                        <i class="fa fa-star"></i>
+                                                    </span>
+                                                    <span>
+                                                        <i class="fa fa-star"></i>
+                                                    </span>
+                                                    <span>
+                                                        <i class="fa fa-star"></i>
+                                                    </span>
+                                                    <span>
+                                                        <i class="fa fa-star"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="align-items-center">
+                                                    <p class="popular-listing-text-2 ac">7 Reviews</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="nl-bg-1">
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-3 col-md-6">
+                        <div>
+                            <h6 class="text-white mb-3 mt-small-screen">Quick Contact</h6>
+                        </div>
+                        <div class="last-section-heading-border">
+                        </div>
+                        <div class="row mt-3 pl-1">
+                            <div class="col-xs p-1">
+                                <a href="">
+                                    <img src="images-pgUser/newsletter/quick-contact/1.png" alt="">
+                                </a>
+                            </div>
+                            <div class="col-xs p-1">
+                                <a href="">
+                                    <img src="images-pgUser/newsletter/quick-contact/2.png" alt="">
+                                </a>
+                            </div>
+                            <div class="col-xs p-1">
+                                <a href="">
+                                    <img src="images-pgUser/newsletter/quick-contact/3.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row pl-1">
+                            <div class="col-xs p-1">
+                                <a href="">
+                                    <img src="images-pgUser/newsletter/quick-contact/4.png" alt="">
+                                </a>
+                            </div>
+                            <div class="col-xs p-1">
+                                <a href="">
+                                    <img src="images-pgUser/newsletter/quick-contact/5.png" alt="">
+                                </a>
+                            </div>
+                            <div class="col-xs p-1">
+                                <a href="">
+                                    <img src="images-pgUser/newsletter/quick-contact/6.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="nl-border"></div>
+
+                <div class="">
+                    <div class="float-left mt-5 foo-text-sm">
+                        <h6 class="foo-text">copyright &copy 2018;
+                            <span style="color:orangered;"> VedasTechnocrat </span> All Rights Reserved.</h6>
+                    </div>
+                    <div class="d-flex justify-content-between float-right social-icon-sm" style="margin-top:40px;">
+                        <div class="bt-mg">
+                            <button class="btn foo-btn">
+                                <i class="fab fa-facebook-f"></i>
+                            </button>
+                        </div>
+                        <div class="bt-mg">
+                            <button class="btn foo-btn">
+                                <i class="fab fa-twitter"></i>
+                            </button>
+                        </div>
+                        <div class="bt-mg">
+                            <button class="btn foo-btn">
+                                <i class="fab fa-google-plus-g"></i>
+                            </button>
+                        </div>
+                        <div class="bt-mg">
+                            <button class="btn foo-btn">
+                                <i class="fab fa-instagram"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!--Test---------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+    <!--Test---------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="app-al.js"></script>
+</body>
+
+</html>

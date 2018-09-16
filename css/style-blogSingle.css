@@ -1,0 +1,574 @@
+*{
+    box-sizing: border-box !important;
+   
+}
+@media screen and (device-aspect-ratio: 40/71) {/*Iphone5*/
+    *{
+        overflow-x:hidden;
+    }
+    .comments-1{
+        display:grid !important;
+        grid-template-columns: 50% 50% !important;
+    }
+    .comments-11{
+        display:flex !important;
+        justify-content: flex-start !important;
+    }
+    .input-section-4{
+        min-width:100% !important;
+    }
+    .subscribe-btn{
+        
+        font-size:14px;
+        padding:10px 25px 10px 25px !important;
+        min-width:468px !important;
+        margin-top:5px;
+        box-shadow: none !important;
+    }
+    .s-btn-text{
+        text-align:justify !important;
+    }
+    .nl-align-txt-2{
+        font-size:28px !important;
+        margin-bottom:50px !important;
+    }
+    .fa-tint .fa-tags .fa-users{
+        font-size:28px !important;
+    }
+    .mt-small-screen{
+        margin-top:30px ;
+    }
+    .blog-margin{
+        padding-top:20px !important;
+        font-size:25px !important;
+        text-align:center;
+    }
+    .blog-small{
+        font-size:12px !important;
+        text-align:center;
+    }
+    .bar-showcase{
+        min-height:170px !important;
+    }
+    .restruant{ 
+        min-height:120px !important;
+    }
+    .tea{
+        min-height:120px !important;
+    }
+    .whisky{
+        min-height:120px !important;
+    }
+    .fa-star{
+        font-size:14px !important;  
+       
+    }
+    .star-review{
+        display:grid !important;
+        grid-template-columns:100% !important;
+    }
+    .ac{
+        margin:0 !important;
+    }
+    .tags-2{
+        margin-left:30px !important;
+    }
+    .share-2{
+        margin-bottom:60px !important;
+        margin-top:30px !important;
+        margin-left:30px !important;
+    }
+    .tags-p{
+        margin-top:30px !important;
+    }
+   
+}
+@media screen and (device-aspect-ratio: 375/667) { /*Iphone 6 7 8 */
+    *{
+        overflow-x:hidden;
+    }
+    .comments-1{
+        display:grid !important;
+        grid-template-columns: 50% 50% !important;
+    }
+    .comments-11{
+        display:flex !important;
+        justify-content: flex-start !important;
+    }
+    .input-section-4{
+        min-width:100% !important;
+    }
+    .subscribe-btn{
+        
+        font-size:14px;
+        padding:10px 25px 10px 25px !important;
+        min-width:468px !important;
+        margin-top:5px;
+        box-shadow: none !important;
+    }
+    .s-btn-text{
+        text-align:justify !important;
+    }
+    .nl-align-txt-2{
+        font-size:28px !important;
+        margin-bottom:50px !important;
+    }
+    .fa-tint .fa-tags .fa-users{
+        font-size:28px !important;
+    }
+    .mt-small-screen{
+        margin-top:30px ;
+    }
+    .blog-margin{
+        padding-top:20px !important;
+        font-size:25px !important;
+        text-align:center;
+    }
+    .blog-small{
+        font-size:12px !important;
+        text-align:center;
+    }
+    .bar-showcase{
+        min-height:170px !important;
+    }
+    .restruant{ 
+        min-height:120px !important;
+    }
+    .tea{
+        min-height:120px !important;
+    }
+    .whisky{
+        min-height:120px !important;
+    }
+    .fa-star{
+        font-size:14px !important;  
+       
+    }
+    .star-review{
+        display:grid !important;
+        grid-template-columns:100% !important;
+    }
+    .ac{
+        margin:0 !important;
+    }
+   
+}
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px)
+  and (-webkit-min-device-pixel-ratio: 2) { /*IPAD PRO*/
+
+
+ .pic-smdv{
+     display:grid !important;
+     grid-template-columns:100%!important;
+ }
+
+}
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  { /*IPAD */
+    *{
+        overflow-x:hidden !important;
+    }
+   .fa-star{
+    margin-top:10px;
+    }
+.popular-listing-text{
+    margin-top:10px;
+}
+.emp-smdv{
+    margin-right:100px;
+  }
+  .emp-smdv-p{
+    min-width:100%;
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.77) and (orientation:portrait) {/*Google Pixel*/
+    .blog-margin{
+        padding-top:20px !important;
+        font-size:25px !important;
+        text-align:center;
+    }
+    .blog-small{
+        font-size:12px !important;
+        text-align:center;
+    }
+    .bar-showcase{
+        min-height:170px !important;
+    }
+}
+
+.bo-test{
+    border:2px solid black;
+}
+.logo-design{
+    color:red;
+}
+.logo-text{
+    font-size:30px ;
+
+}
+.nav-btn-design{
+    background-color:red;
+    color:white;
+    border-radius:40px;
+    padding:5px 35px 5px 35px;
+    font-size:13px;
+    font-weight:bold;
+    margin-left:40px;
+}
+.nav-text-design{
+    color:black;
+}
+
+.active{
+    border-bottom:2px solid red;
+}
+.fa-sign{
+    font-size:12px;
+    opacity:0.9;
+    padding-right:2px;
+}
+.fa-register{
+    font-size:12px;
+    opacity:0.9;
+    padding-right:5px;
+}
+.nav-link:hover{
+    color:black;
+}
+.addListing-hover{
+    text-decoration:none !important;
+    color:white;
+}
+.addListing-hover:hover > .nav-link{
+    color:white !important;
+}
+.bar-showcase{
+    background:url('../images-blogSingle/restruant1.jpg') no-repeat;
+    background-size:100%;
+    min-height: 274px;
+    display:block;
+    padding:0 !important;
+    margin:0;
+    opacity:0.9;
+   
+    background-position:top center;
+}
+.bar-text{
+    color:white;
+}
+.blog-margin{
+    padding-top:100px;
+}
+.section-2{
+    margin-top:5%;
+}
+.section-2-text-1{
+    font-size:20px;
+    font-weight:normal;
+}
+.section-2-text-2{
+    font-size:12px;
+    opacity:0.8;
+}
+.restruant{
+    background:url('../images-blogSingle/discuss11.jpeg') no-repeat;
+    background-size:100%;
+    min-height: 290px;
+    display:block;
+    padding:0 !important;
+    margin:0;
+}
+.tea{
+    background:url('../images-blogSingle/tea.png') no-repeat;
+    background-size:100%;
+    min-height: 290px;
+    display:block;
+    padding:0 !important;
+    margin:0;
+}
+.whisky{
+    background:url('../images-blogSingle/whisky.jpeg') no-repeat;
+    background-size:100%;
+    min-height: 290px;
+    display:block;
+    padding:0 !important;
+    margin:0;
+}
+.section-2-text-3{
+    font-size:14px;
+    color:black;
+    text-align: justify;
+    opacity:0.9;
+}
+.section-2-btn-1{
+    background-color:red;
+    color:white;
+    padding:10px 20px 10px 20px;
+    border:none;
+}
+.fa-chevron-right{
+    font-size:12px;
+}
+.margin-hr{
+    margin-top:50px;
+    margin-bottom:50px;
+}
+.pg-btn{
+    background-color:whitesmoke;
+    color:black;
+}
+
+.active-pg-btn{
+    background-color:red;
+    color:white;
+}
+.section-4{
+    background-color:whitesmoke;
+    max-width:100%;
+    min-height:400px;;
+}
+.section-4-inner{
+    padding-top:100px;
+}
+.input-section-4{
+    min-width:330px;
+    padding-left:15px;
+    padding-right:15px;
+    padding-top:10px;
+    padding-bottom:10px;
+    background-color:whitesmoke;
+}
+.border-input{
+    border:1px solid darkgray;
+    opacity:0.6;
+}
+.subscribe-btn{
+    background-color:red;
+    color:white;
+    border:none;
+    font-size:14px;
+    letter-spacing:1px;
+    padding:0px 25px 0px 25px;
+}
+.nl-p{
+    font-size:14px;
+    opacity:0.7;
+}
+.fa-tint{
+    color:red;
+    font-size:40px;
+}
+.fa-tags{
+    color:red;
+    font-size:40px;
+}
+.fa-users{
+    color:red;
+    font-size:40px;
+}
+
+.nl-align-txt-1{
+    font-weight:normal;
+    font-size:16px;
+}
+.nl-align-txt-2{
+    font-weight:bold;
+    font-size:45px;
+    color:red;
+    letter-spacing:2px;
+}
+.last-section{
+    background-color:rgb(31, 28, 28);
+    min-height:550px;
+    min-width:100%;
+}
+.last-section-inner{
+    padding-top:70px;
+}
+.last-section-heading-border{
+    border-bottom:2px solid whitesmoke;
+    width:40px;
+    opacity:0.6;
+}
+.about-us-text{
+    color:white;
+    text-align:justify;
+    opacity:0.4;
+    font-size:16px;
+    line-height:20px;
+    margin-top:10%;
+    letter-spacing: 0.1px;
+    word-spacing: 0.5px;
+}
+.fa-map-marker-alt{
+    color:white;
+    opacity:0.4;
+    font-size:14px;
+}
+.fa-phone{
+    color:white;
+    opacity:0.4;
+    font-size:14px;
+}
+.privact-policy-links{
+    color:white;
+    opacity:0.5;
+    font-size:16px;
+    
+}
+.privact-policy-links:hover{
+    text-decoration:none;
+    color:white;
+    opacity:0.9;
+}
+.margin-pp{
+    margin-top:10%;
+}
+.margin-pp-2{
+    margin-top:20%;
+}
+.popular-listing-text{
+    color:white;
+    text-align:justify;
+    opacity:0.5;
+    font-size:16px;
+}
+.fa-star{
+    color:orange;
+    opacity:0.9;
+    font-size:14px;
+}
+.popular-listing-text-2{
+    font-size:14px;
+    color:white;
+    opacity:0.5;
+    padding: 4px 0px 0px 4px;
+}
+.nl-bg-1{
+    border-top:1px solid white;
+    opacity:0.1;
+    min-width:270px;
+}
+.nl-border{
+    margin-top:100px;
+    border-bottom:1px solid white;
+    opacity:0.1;
+}
+.foo-btn{
+    color:white;
+    background-color:rgba(66, 65, 65,0.3);
+    border-radius:50%;
+    width:40px;
+    height:40px;
+}
+.foo-btn:hover{
+    color:white;
+    background-color:black;
+    border-radius:50%;
+   
+}
+.bt-mg{
+    padding:0px 10px 0px 10px;
+}
+.foo-text{
+    color:white;
+    opacity:0.9;
+    font-weight:normal;
+}
+.border-recent-post{
+    border-top:3px solid orangered;
+    width:30px;
+}
+.recent-qs{
+    font-size:16px;
+    font-weight:normal;
+    color:black;
+}
+.recent-qs:hover{
+    text-decoration:none;
+}
+.recent-ans{
+    font-weight:normal;
+    color:gray;
+    opacity:0.5;
+    margin-top:10px;
+    font-size:14px;
+}
+.qs-ans{
+    padding-bottom:15px;
+    padding-top:15px;
+    border-bottom:1px solid rgba(211,211,211,0.3);
+}
+.qs-ans-btm{
+    padding-bottom:15px;
+    padding-top:15px;
+    border-bottom:1px solid rgba(211,211,211,0.3);
+    margin-bottom:30px;
+}
+.dropdown-right-links{
+    color:black;
+    text-align:justify;
+    padding-left:30%;
+}
+.drop-item-design{
+    margin-top:15px;
+    margin-bottom:15px;
+    border-bottom:1px solid rgba(211,211,211,0.5);
+    width:300px;
+}
+.tag-button{
+    padding:5px 10px 5px 10px;
+    background-color:red;
+    color:white;
+    border:none;
+    margin:5px;
+    border-radius:3px;
+}
+/*----------------------------Blog Single----------------------------*/
+.li-text{
+    line-height:20px;
+    font-style:italic;
+}
+.active-color{
+    color:red;
+}
+#deactive{
+    color:black;
+}
+.bt-mg2{
+    padding:0px 5px 0px 5px;
+}
+.charles{
+    font-size:14px;
+    font-weight:normal;
+    line-height:20px;
+    text-align:justify;
+
+}
+.emp{
+   min-height:150px;
+    max-width:150px;
+}
+::placeholder{ 
+    font-size:12px;
+    color:rgba(0,0,0,0.3) !important;
+    font-weight:bold;
+}
+.emp-btn{
+    background-color:red;
+    color:white;
+    padding:10px 20px 10px 20px;
+    border-radius:none !important;
+    font-size:12px;
+    font-weight:bold;
+}
+.mg-leave{
+    margin-top:100px;
+}
+.mg-leave2{
+    margin-bottom:100px;
+}
